@@ -3,7 +3,7 @@ import { FileType } from "@/typing";
 import { Button } from "../ui/button";
 import { DataTable } from "./Table";
 import { columns } from "./columns";
-import { RedirectToUserProfile, useUser } from "@clerk/nextjs";
+import { RedirectToUserProfile, useUser } from "@clerk/nextjs/server";
 import { useEffect, useState } from "react";
 import { useCollection } from "react-firebase-hooks/firestore";
 import { collection, orderBy, query } from "firebase/firestore";

@@ -1,7 +1,7 @@
 "use client";
 import { db, storage } from "@/firbase";
 import { cn } from "@/lib/utils";
-import { useUser } from "@clerk/nextjs";
+import { useUser } from "@clerk/nextjs/server";
 import {
   addDoc,
   collection,

@@ -13,7 +13,7 @@ import {
 } from "@/components/ui/dialog";
 import { db, storage } from "@/firbase";
 import { useAppStore } from "@/store/store";
-import { useUser } from "@clerk/nextjs";
+import { useUser } from "@clerk/nextjs/server";
 import { deleteDoc, doc } from "firebase/firestore";
 import { deleteObject, ref } from "firebase/storage";
 import toast from "react-hot-toast";
