@@ -5,51 +5,37 @@ export default function Home() {
   return (
     <main className="">
       <div
-        className="flex flex-col lg:flex-row items-center bg-[#2B2929]
-dark:bg-slate-800"
+        className="flex flex-col lg:flex-row items-center bg-[#1A1D23]
+dark:bg-gray-900"
       >
         <div
-          className="p-10 flex flex-col bg-[#2B2929]
-dark:bg-slate-800 Itext-white space-y-5"
+          className="p-10 flex flex-col bg-[#1A1D23]
+dark:bg-gray-900 text-gray-100 space-y-5"
         >
           <h1 className="text-5xl font-bold">
-            Dropbox clone
+            Not Toxic AI
             <br />
             <br />
-            Storing everything for you and your business needs. All in one place
+            All your AI labelling needs. All in one place
           </h1>
           <p className="pb-20">
-            Enhance your personal storage with Dropbox, offering a simple and
-            efficient way to upload, organize, and access files from anywhere.
-            Securely store important documents and media, and experience the
-            convenience of easy file management and sharing in one centralized
-            solution.
+            Get all of your AI data labelled and validate for up to 20x accuracy gains.
           </p>
           <Link
             href="/dashboard"
-            className="flex cursor-pointer bg-blue-500 p-5 w-fit"
+            className="flex cursor-pointer bg-[#00ADB5] hover:bg-[#00A1AB] p-5 w-fit text-gray-900 font-semibold rounded"
           >
-            Try it for free
-            <ArrowRight className="ml-10" />
+            Get started for free
+            <ArrowRight className="ml-10 text-gray-900" />
           </Link>
         </div>
-        <div className="bg-[#1e1919] dark:bg-slate-800 h-full p-10">
-          <video autoPlay loop muted className="rounded-lg">
-            <source
-              src="https://aem.dropbox.com/cms/content/dam/dropbox/warp/en-us/overview/lp-header-graphite200-1920x1080.mp4"
-              type="video/mp4"
-            />
-            Your browser does not support the video tag.
-          </video>
-        </div>
       </div>
-      <p className="text-center font-bold text-xl pt-5">Disclaimer</p>
-      <p className="text-center font-light p-2">
-        This video is made for informational and educational purposes only. We
-        do not own or affiliate with Dropbox or/and any of its subsidiaries in
-        any form. Copyright Disclaimer under section 107 of the Copyright Act
-        1976, allowance is made for fair use of this video for education
-        purposes.
+      <p className="text-center font-bold text-xl pt-5 text-gray-100">Disclaimer</p>
+      <p className="text-center font-light p-2 text-gray-300">
+        Our AI Labelling is so good it might be illegal.
+      </p>
+      <p className="text-center font-light p-2 text-gray-300">
+        Use at your own risk.
       </p>
     </main>
   );
