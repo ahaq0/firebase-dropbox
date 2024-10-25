@@ -1,7 +1,7 @@
 "use client";
 
 import { useAppStore } from "@/store/store";
-import { useUser } from "@clerk/nextjs/server";
+import { useUser } from "@clerk/nextjs";
 import { useState } from "react";
 import { Dialog, DialogContent, DialogHeader, DialogTitle } from "./ui/dialog";
 import { Input } from "./ui/input";
