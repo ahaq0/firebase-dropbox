@@ -19,7 +19,7 @@ dark:bg-gray-900 text-gray-100 space-y-5"
             All your AI labelling needs. All in one place
           </h1>
           <p className="pb-20">
-            Get all of your AI data labelled and validate for up to 20x accuracy gains.
+            Get all of your AI data labelled and validated for up to 20x accuracy gains.
           </p>
           <Link
             href="/dashboard"
