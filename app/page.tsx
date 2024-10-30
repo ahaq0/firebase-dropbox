@@ -13,7 +13,7 @@ dark:bg-gray-900"
 dark:bg-gray-900 text-gray-100 space-y-5"
         >
           <h1 className="text-5xl font-bold">
-            Not Toxic AI
+            Atlas AI
             <br />
             <br />
             All your AI labelling needs. All in one place
