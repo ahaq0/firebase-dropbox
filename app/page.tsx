@@ -16,8 +16,13 @@ async function Home() {
         <section className="container space-y-3 p-4">
           <h2 className="text-xl font-bold text-red-400">Authentication Error</h2>
           <h4 className="text-gray-200">
-              Authentication not found. Please <SignedOut>
-            <SignInButton className="text-blue-500 underline" afterSignInUrl="" mode="modal" />
+              <SignedOut>
+              Authentication not found. Please{" "}
+          <SignInButton afterSignInUrl="" mode="modal">
+            <span className="text-blue-500 underline hover:text-blue-200 transition duration-200 cursor-pointer">
+              sign in
+            </span>
+          </SignInButton>{" "}
             </SignedOut> to access your files.
           </h4>
         </section>
