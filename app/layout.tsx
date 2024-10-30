@@ -10,7 +10,7 @@ const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
   title: "Atlas AI",
-  description: "Label your data, scarcy good",
+  description: "Label your data, scary good",
 };
 
 export default function RootLayout({
