@@ -1,4 +1,4 @@
-## Not Toxic
+## Atlas AI
 ### Overview
 
 ### Features

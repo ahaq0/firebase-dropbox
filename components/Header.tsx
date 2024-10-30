@@ -17,7 +17,7 @@ function Header() {
   />
 </div>
 
-        <h1 className="texy-bold font-xl">Not Toxic AI</h1>
+        <h1 className="texy-bold font-xl">Atlas AI</h1>
       </Link>
       <div className="px-5 flex space-x-2 items-center">
         {/* <ThemeToggler/> */}
