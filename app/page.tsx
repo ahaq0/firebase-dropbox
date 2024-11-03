@@ -13,22 +13,23 @@ async function Home() {
   if (!userId) {
     return (
       <div className="border-t">
-        <section className="container space-y-3 p-4">
-          <h2 className="text-xl font-bold text-red-400">Authentication Error</h2>
+        <section className="container space-y-3 p-4 flex flex-col items-center text-center">
+          <h2 className="text-xl">Sign In Atlas AI</h2>
           <h4 className="text-gray-200">
-              <SignedOut>
-              Authentication not found. Please{" "}
-          <SignInButton afterSignInUrl="" mode="modal">
-            <span className="text-blue-500 underline hover:text-blue-200 transition duration-200 cursor-pointer">
-              sign in
-            </span>
-          </SignInButton>{" "}
-            </SignedOut> to access your files.
+            <SignedOut>
+              Please{" "}
+              <SignInButton afterSignInUrl="" mode="modal">
+                <span className="text-blue-500 underline hover:text-blue-200 transition duration-200 cursor-pointer">
+                  sign in
+                </span>
+              </SignInButton>{" "}
+            </SignedOut>
+            to access your files and enjoy the entire Atlas AI experience.
           </h4>
         </section>
       </div>
     );
-  }
+      }
 
   const docsResults = await getDocs(collection(db, "users", userId, "files"));
   const skeletonFiles = docsResults.docs.map((doc) => ({
