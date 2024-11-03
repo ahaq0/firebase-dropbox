@@ -40,6 +40,7 @@ async function Home() {
     downloadURL: doc.data().downloadURL,
     type: doc.data().type,
     size: doc.data().size,
+    status: doc.data().status
   }));
 
   return (

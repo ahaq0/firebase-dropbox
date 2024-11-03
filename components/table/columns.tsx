@@ -41,16 +41,29 @@ export const columns: ColumnDef<FileType>[] = [
     },
   },
   {
-    accessorKey: "downloadURL",
-    header: "Link",
-    cell: ({ renderValue, ...props }) => (
-      <a
-        href={renderValue() as string}
-        target="_blank"
-        className="underline text-blue-500 hover:text-blue-600"
-      >
-        Download
-      </a>
-    ),
+    accessorKey: "status",
+    header: "Status",
+    cell: ({ renderValue, ...props }) => {
+      const stat = renderValue() as string;
+      return stat ? (
+        stat
+      ) : "Not Started";
+      }
   },
+  {
+    accessorKey: "downloadURL",
+    header: "Labelled File",
+    cell: ({ renderValue, ...props }) => {
+      const url = renderValue() as string;
+      return url ? (
+        <a
+          href={url}
+          target="_blank"
+          className="underline text-blue-500 hover:text-blue-600"
+        >
+          Download
+        </a>
+      ) : null;
+      }
+    },
 ];

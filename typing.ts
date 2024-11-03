@@ -6,4 +6,5 @@ export type FileType = {
     downloadURL: string
     type: string;
     size: number;  
+    status: string;
 }
